@@ -5,10 +5,10 @@ from json import load;
 template_env = Environment(loader=FileSystemLoader(searchpath="./"))
 template = template_env.get_template("layout.html")
 
-with open("site.md") as markdown_file:
+with open("website.md") as markdown_file:
     website = markdown(markdown_file.read())
 
-with open("index.html") as output_file:
+with open("index.html", "w") as output_file:
     output_file.write(
         template.render(
             website=website
