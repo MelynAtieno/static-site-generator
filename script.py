@@ -14,6 +14,11 @@ with open("about.md") as markdown_file:
         markdown_file.read()
     )
 
+with open("poem.md") as markdown_file:
+    poem = markdown(
+        markdown_file.read()
+    )
+
 with open("config.json") as config_file:
     config = load(config_file)
 
@@ -22,7 +27,8 @@ with open('index.html', 'w') as output_file:
         template.render(
             title=config['title'],
             homepage=homepage,
-            about=about
+            about=about,
+            poem=poem
         )
     )
 
