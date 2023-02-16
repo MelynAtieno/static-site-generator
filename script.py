@@ -5,4 +5,9 @@ from json import load;
 template_env = Environment(loader=FileSystemLoader(searchpath="./"))
 template = template_env.get_template("layout.html")
 
-#with open("index.html") as output_file:
+with open("index.html") as output_file:
+    output_file.write(
+        template.render(
+            website="This is the website"
+        )
+    )
