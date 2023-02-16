@@ -19,6 +19,11 @@ with open("poem.md") as markdown_file:
         markdown_file.read()
     )
 
+with open("contact.md") as markdown_file:
+    contact = markdown(
+        markdown_file.read()
+    )
+
 with open("config.json") as config_file:
     config = load(config_file)
 
@@ -28,7 +33,8 @@ with open('index.html', 'w') as output_file:
             title=config['title'],
             homepage=homepage,
             about=about,
-            poem=poem
+            poem=poem,
+            contact=contact
         )
     )
 
