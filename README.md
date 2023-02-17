@@ -1,6 +1,6 @@
-## Static Site Generator
+## STATIC-SITE GENERATOR
 
-This is a static site generator that uses markdown files to produce a static site.
+This is a static-site generator that uses markdown files to produce a static site.
 
 It was built using:
 <ul>
@@ -9,7 +9,7 @@ It was built using:
 <li>Python</li>
 </ul>
 
-## Getting Started
+## GETTING STARTED
 
 clone this repository on your local machine, using the command line interface:
 
@@ -29,7 +29,7 @@ To view the static site, run:
 
 You are now able to view the static site on the browser.
 
-## How to use the static-site generator.
+## HOW TO USE THE STATIC-SITE GENERATOR
 
 Ensure python is installed on your local machine.
 
