@@ -1,0 +1,17 @@
+.nav-item{
+    text-decoration: none;
+    margin-right: 2.5em;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+}
+
+.nav-item:hover{
+    color: rgb(119, 147, 240);
+}
+
+.navbar{
+    text-align: right;
+    background-color: black;
+    padding: 2em;
+}

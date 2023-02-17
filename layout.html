@@ -1,23 +1,34 @@
 <!DOCTYPE >
 <html>
     <head>
-        
+        <link rel="stylesheet" href="layout.css">
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><a>HOME</a></li>
-                <li><a>ABOUT</a></li>
-                <li><a>BLOGS</a></li>
-                <li><a>CONTACT US</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+        
+            
+                <a class="nav-item" href="#home"><b>HOME</b></a>
+                <a class="nav-item" href="#about"><b>ABOUT</b></a>
+                <a class="nav-item" href="#poems"><b>POEMS</b></a>
+                <a class="nav-item" href="#contact"><b>CONTACT US</b></a>
+        
+        
+        </div>
         <h1 class="title">{{ title }}</h1>
-        <div class="homepage">
+        <div id="homepage">
             {{ homepage }}
         </div>
-        {{ about }}
-        {{ poem }}
-        {{ contact }}
+        <div id="about"> 
+            {{ about }}
+        </div>
+        <div id="poems"> 
+            {{ poem }}
+        </div>
+        <div id="contact"> 
+            {{ contact }}
+        </div>
+        
+        
+        
     </body>
 </html>
