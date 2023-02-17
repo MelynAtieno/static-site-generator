@@ -5,21 +5,21 @@ from json import load
 template_env = Environment(loader=FileSystemLoader(searchpath="./"))
 template = template_env.get_template("layout.html")
 
-with open("./site/homepage.md") as markdown_file:
+with open("./website/homepage.md") as markdown_file:
     homepage = markdown(
         markdown_file.read())
 
-with open("./site/about.md") as markdown_file:
+with open("./website/about.md") as markdown_file:
     about = markdown(
         markdown_file.read()
     )
 
-with open("./site/poem.md") as markdown_file:
+with open("./website/poem.md") as markdown_file:
     poem = markdown(
         markdown_file.read()
     )
 
-with open("./site/contact.md") as markdown_file:
+with open("./website/contact.md") as markdown_file:
     contact = markdown(
         markdown_file.read()
     )
